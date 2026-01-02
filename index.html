@@ -1,1 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald’s Coffee Menu with Prices 2025–2026 (Real Talk)</title>
+    <meta name="description" content="The ultimate guide to McDonald's Coffee prices for 2025-2026. Includes menu, calories, top picks, and FAQs.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mcd: {
+                            red: '#DA291C',
+                            yellow: '#FFC72C',
+                            dark: '#27251F',
+                            brown: '#4B3621', /* Coffee Bean Brown */
+                            cream: '#F9F5F0'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #F9F5F0; }
+        .coffee-pattern {
+            background-image: radial-gradient(#4B3621 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.05;
+        }
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #DA291C; border-radius: 5px; }
+    </style>
+</head>
+<body class="text-mcd-dark antialiased">
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md border-b-4 border-mcd-yellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-10 h-10 bg-mcd-red rounded flex items-center justify-center text-mcd-yellow text-2xl font-bold shadow-sm">
+                        M
+                    </div>
+                    <span class="font-display font-bold text-2xl tracking-tight uppercase">McCafé Guide <span class="text-mcd-red">2026</span></span>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-wide">
+                    <a href="#menu" class="hover:text-mcd-red transition-colors">Menu Prices</a>
+                    <a href="#types" class="hover:text-mcd-red transition-colors">Coffee Types</a>
+                    <a href="#top-picks" class="hover:text-mcd-red transition-colors">Top 8 Picks</a>
+                    <a href="#faq" class="hover:text-mcd-red transition-colors">FAQs</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-2xl text-mcd-dark focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#menu" class="block py-3 font-bold hover:text-mcd-red border-b border-gray-100">Menu Prices</a>
+                <a href="#types" class="block py-3 font-bold hover:text-mcd-red border-b border-gray-100">Coffee Types</a>
+                <a href="#top-picks" class="block py-3 font-bold hover:text-mcd-red border-b border-gray-100">Top 8 Picks</a>
+                <a href="#faq" class="block py-3 font-bold hover:text-mcd-red">FAQs</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-mcd-brown text-white py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <i class="fa-solid fa-mug-hot text-9xl absolute -top-10 -right-10 transform rotate-12"></i>
+            <i class="fa-solid fa-coffee-bean text-8xl absolute bottom-10 left-10 opacity-50"></i>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <span class="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest uppercase bg-mcd-yellow text-mcd-dark rounded-full">Updated for 2025-2026</span>
+            <h1 class="font-display text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                McDonald’s Coffee Menu with Prices <span class="text-mcd-yellow">2025–2026</span> (Real Talk)
+            </h1>
+            <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto leading-relaxed">
+                You’re running late, stomach growling, eyes barely open, and the only thing keeping you alive is the promise of caffeine. Then you pull up to McDonald’s and freeze. The <a href="https://mcdonalds-menu-prices.us/">menu</a> board looks like a foreign language, prices seem higher than last month, and you’re terrified of spending $7 on something that tastes like hot milk. We’ve all stood there doing the awkward “uhh… one second” dance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Intro Text Section -->
+    <section class="py-12 px-4 max-w-4xl mx-auto text-center">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border-l-8 border-mcd-red relative">
+            <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-mcd-red text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-md">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p class="text-lg text-gray-700 leading-relaxed pt-4">
+                Stop the panic. I drink McDonald’s coffee almost every single day (yes, I’m addicted), so I made the ultimate <a href="https://mcdonalds-menu-prices.us/mcdonalds-coffee-menu/">McDonald’s coffee menu with prices</a> guide that’s actually updated for 2025–2026. No fluff, no outdated numbers — just exactly what you’ll pay at the window right now.
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu Table Section -->
+    <section id="menu" class="py-16 px-4 bg-white relative">
+        <div class="coffee-pattern absolute inset-0"></div>
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="text-center mb-10">
+                <h2 class="font-display text-4xl font-bold text-mcd-dark uppercase">Current McDonald’s Coffee Prices</h2>
+                <p class="text-mcd-brown font-medium mt-2">(Nationwide Averages 2026)</p>
+            </div>
+
+            <div class="overflow-x-auto rounded-xl shadow-xl border border-gray-200">
+                <table class="w-full text-left border-collapse bg-white">
+                    <thead class="bg-mcd-dark text-white uppercase text-sm tracking-wider">
+                        <tr>
+                            <th class="p-5">Drink</th>
+                            <th class="p-5">Size</th>
+                            <th class="p-5">Price Range</th>
+                            <th class="p-5">Calories</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700 font-medium text-sm md:text-base divide-y divide-gray-100">
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Premium Roast Coffee</td><td class="p-4">Small</td><td class="p-4 font-bold text-mcd-red">$1.00–$1.69</td><td class="p-4">0–5</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Premium Roast Coffee</td><td class="p-4">Medium</td><td class="p-4 font-bold text-mcd-red">$1.49–$1.99</td><td class="p-4">0–5</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Premium Roast Coffee</td><td class="p-4">Large</td><td class="p-4 font-bold text-mcd-red">$1.79–$2.29</td><td class="p-4">0–10</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Iced Coffee (Vanilla)</td><td class="p-4">Small</td><td class="p-4 font-bold text-mcd-red">$2.29–$2.69</td><td class="p-4">140</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Iced Coffee (Vanilla)</td><td class="p-4">Medium</td><td class="p-4 font-bold text-mcd-red">$2.79–$3.29</td><td class="p-4">190</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Iced Coffee (Vanilla)</td><td class="p-4">Large</td><td class="p-4 font-bold text-mcd-red">$3.29–$3.79</td><td class="p-4">260</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Caramel Frappe</td><td class="p-4">Small</td><td class="p-4 font-bold text-mcd-red">$3.49–$3.99</td><td class="p-4">430</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Caramel Frappe</td><td class="p-4">Medium</td><td class="p-4 font-bold text-mcd-red">$4.19–$4.79</td><td class="p-4">510</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Caramel Frappe</td><td class="p-4">Large</td><td class="p-4 font-bold text-mcd-red">$4.99–$5.79</td><td class="p-4">670</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Mocha Frappe</td><td class="p-4">Medium</td><td class="p-4 font-bold text-mcd-red">$4.19–$4.79</td><td class="p-4">500</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Iced Caramel Macchiato</td><td class="p-4">Small</td><td class="p-4 font-bold text-mcd-red">$3.79–$4.29</td><td class="p-4">250</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Iced Caramel Macchiato</td><td class="p-4">Medium</td><td class="p-4 font-bold text-mcd-red">$4.29–$4.79</td><td class="p-4">320</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Iced Caramel Macchiato</td><td class="p-4">Large</td><td class="p-4 font-bold text-mcd-red">$4.99–$5.49</td><td class="p-4">400</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Hot Caramel Latte</td><td class="p-4">Medium</td><td class="p-4 font-bold text-mcd-red">$3.79–$4.29</td><td class="p-4">310</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Hot French Vanilla Latte</td><td class="p-4">Large</td><td class="p-4 font-bold text-mcd-red">$4.49–$4.99</td><td class="p-4">370</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Cappuccino</td><td class="p-4">Medium</td><td class="p-4 font-bold text-mcd-red">$3.59–$4.19</td><td class="p-4">140</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Americano</td><td class="p-4">Large</td><td class="p-4 font-bold text-mcd-red">$3.49–$3.99</td><td class="p-4">15</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Iced French Vanilla Latte</td><td class="p-4">Medium</td><td class="p-4 font-bold text-mcd-red">$4.29–$4.79</td><td class="p-4">310</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Caramel Macchiato (Hot)</td><td class="p-4">Large</td><td class="p-4 font-bold text-mcd-red">$4.79–$5.29</td><td class="p-4">400</td></tr>
+                        <tr class="hover:bg-yellow-50 transition"><td class="p-4 font-bold">Mocha Latte (Hot)</td><td class="p-4">Medium</td><td class="p-4 font-bold text-mcd-red">$3.99–$4.49</td><td class="p-4">350</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types of Coffee -->
+    <section id="types" class="py-16 px-4 max-w-7xl mx-auto">
+        <h2 class="font-display text-4xl font-bold text-center text-mcd-dark uppercase mb-12">Types of Coffee McDonald’s Serves</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border-t-8 border-mcd-brown hover:shadow-xl transition-shadow">
+                <div class="w-14 h-14 bg-mcd-brown rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold mb-3">Hot Coffees</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    The classic Premium Roast is brewed fresh every 30 minutes and honestly beats most diner coffee. It’s dark enough to wake you up but never bitter. My go-to on freezing mornings is the Caramel Latte — sweet, warm, and tastes like someone put love in a cup.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border-t-8 border-mcd-yellow hover:shadow-xl transition-shadow">
+                <div class="w-14 h-14 bg-mcd-yellow rounded-full flex items-center justify-center text-mcd-dark text-2xl mb-6">
+                    <i class="fa-solid fa-glass-water"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold mb-3">Iced Coffees</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    The regular Iced Coffee (with vanilla syrup and cream) is dangerously addictive. It’s sweet, but not syrupy-sweet like some places. Pro tip: order it with light ice and you basically get 30% more coffee for the same price.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border-t-8 border-mcd-red hover:shadow-xl transition-shadow">
+                <div class="w-14 h-14 bg-mcd-red rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                    <i class="fa-solid fa-blender"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold mb-3">Specialty Drinks & Frappés</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    This is where McDonald’s flexes. The Caramel Frappe is straight-up dessert — thick, cold, topped with whipped cream and drizzle. If you’re having a bad day, one of these will fix it. The Iced Caramel Macchiato is my summer obsession; it’s layered so every sip tastes different.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 8 Picks -->
+    <section id="top-picks" class="py-16 px-4 bg-mcd-dark text-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-display text-4xl font-bold text-center text-mcd-yellow uppercase mb-12">Top 8 McDonald’s Coffee Drinks You Absolutely Must Try</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Item 1 -->
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
+                    <h3 class="font-bold text-xl text-mcd-yellow mb-2">Caramel Frappe</h3>
+                    <p class="text-sm opacity-90">This is not coffee. This is happiness blended with ice and topped with heaven. The caramel drizzle on top is non-negotiable.</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
+                    <h3 class="font-bold text-xl text-mcd-yellow mb-2">Iced Caramel Macchiato</h3>
+                    <p class="text-sm opacity-90">Looks like it belongs in a fancy café, costs half as much, and actually tastes better than the green mermaid version.</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
+                    <h3 class="font-bold text-xl text-mcd-yellow mb-2">Premium Roast Hot Coffee</h3>
+                    <p class="text-sm opacity-90">Still the best deal in fast food. Unlimited refills at most locations if you dine in. Pure, simple, perfect.</p>
+                </div>
+                <!-- Item 4 -->
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
+                    <h3 class="font-bold text-xl text-mcd-yellow mb-2">Mocha Frappe</h3>
+                    <p class="text-sm opacity-90">Chocolate lovers, this one’s for you. It’s like drinking a frozen candy bar that still has caffeine.</p>
+                </div>
+                <!-- Item 5 -->
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
+                    <h3 class="font-bold text-xl text-mcd-yellow mb-2">Iced Coffee with Extra Cream</h3>
+                    <p class="text-sm opacity-90">My daily order. Sweet, creamy, strong — one large and I’m unstoppable until 6 PM.</p>
+                </div>
+                <!-- Item 6 -->
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
+                    <h3 class="font-bold text-xl text-mcd-yellow mb-2">Hot Caramel Latte</h3>
+                    <p class="text-sm opacity-90">Tastes like Christmas morning in a cup. Perfect with a Sausage McMuffin when it’s cold outside.</p>
+                </div>
+                <!-- Item 7 -->
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
+                    <h3 class="font-bold text-xl text-mcd-yellow mb-2">French Vanilla Iced Coffee</h3>
+                    <p class="text-sm opacity-90">Sweeter than regular iced coffee, smoother than a latte. Feels like a treat without the guilt.</p>
+                </div>
+                <!-- Item 8 -->
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm">
+                    <h3 class="font-bold text-xl text-mcd-yellow mb-2">Americano</h3>
+                    <p class="text-sm opacity-90">For the days you need pure rocket fuel. Strong, bold, zero sugar — just espresso and hot water.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faq" class="py-16 px-4 max-w-4xl mx-auto">
+        <h2 class="font-display text-4xl font-bold text-center text-mcd-dark uppercase mb-10">10 McDonald’s Coffee FAQs Everyone Asks in 2026</h2>
+        
+        <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white font-bold flex justify-between items-center faq-toggle">
+                    <span>1. How much is McDonald’s coffee right now?</span>
+                    <i class="fa-solid fa-chevron-down text-mcd-red transition-transform"></i>
+                </button>
+                <div class="hidden p-4 bg-gray-50 text-gray-700">Premium Roast is $1–$2.29 any size depending on location; seniors pay as low as $0.89.</div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white font-bold flex justify-between items-center faq-toggle">
+                    <span>2. How much is a <a href="https://mcd-menu.tiiny.site/">Big Mac</a> in 2026?</span>
+                    <i class="fa-solid fa-chevron-down text-mcd-red transition-transform"></i>
+                </button>
+                <div class="hidden p-4 bg-gray-50 text-gray-700">$5.99 average, $10.19 for the medium meal.</div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white font-bold flex justify-between items-center faq-toggle">
+                    <span>3. What’s the cheapest coffee on the menu?</span>
+                    <i class="fa-solid fa-chevron-down text-mcd-red transition-transform"></i>
+                </button>
+                <div class="hidden p-4 bg-gray-50 text-gray-700">Premium Roast hot coffee — often $1 any size through the app.</div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white font-bold flex justify-between items-center faq-toggle">
+                    <span>4. Is McDonald’s iced coffee already sweet?</span>
+                    <i class="fa-solid fa-chevron-down text-mcd-red transition-transform"></i>
+                </button>
+                <div class="hidden p-4 bg-gray-50 text-gray-700">Yes, comes with vanilla syrup and cream. Ask for “no liquid sugar” if you want it less sweet.</div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white font-bold flex justify-between items-center faq-toggle">
+                    <span>5. Best coffee hack nobody talks about?</span>
+                    <i class="fa-solid fa-chevron-down text-mcd-red transition-transform"></i>
+                </button>
+                <div class="hidden p-4 bg-gray-50 text-gray-700">Order any latte “extra hot” and it stays warm twice as long in the car.</div>
+            </div>
+             <!-- FAQ 6 -->
+             <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white font-bold flex justify-between items-center faq-toggle">
+                    <span>6. Does McDonald’s have oat milk yet?</span>
+                    <i class="fa-solid fa-chevron-down text-mcd-red transition-transform"></i>
+                </button>
+                <div class="hidden p-4 bg-gray-50 text-gray-700">Yes! Nationwide now — just 50–80¢ extra.</div>
+            </div>
+             <!-- FAQ 7 -->
+             <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white font-bold flex justify-between items-center faq-toggle">
+                    <span>7. What’s the strongest coffee they have?</span>
+                    <i class="fa-solid fa-chevron-down text-mcd-red transition-transform"></i>
+                </button>
+                <div class="hidden p-4 bg-gray-50 text-gray-700">Americano or espresso shots added to iced coffee.</div>
+            </div>
+             <!-- FAQ 8 -->
+             <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white font-bold flex justify-between items-center faq-toggle">
+                    <span>8. How to get free McDonald’s coffee?</span>
+                    <i class="fa-solid fa-chevron-down text-mcd-red transition-transform"></i>
+                </button>
+                <div class="hidden p-4 bg-gray-50 text-gray-700">Use the app — free medium coffee after your first purchase, then every 7th drink free.</div>
+            </div>
+             <!-- FAQ 9 -->
+             <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white font-bold flex justify-between items-center faq-toggle">
+                    <span>9. Are Frappés available all day?</span>
+                    <i class="fa-solid fa-chevron-down text-mcd-red transition-transform"></i>
+                </button>
+                <div class="hidden p-4 bg-gray-50 text-gray-700">Yes, from 6 AM until closing at most locations.</div>
+            </div>
+             <!-- FAQ 10 -->
+             <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white font-bold flex justify-between items-center faq-toggle">
+                    <span>10. Why does my McDonald’s coffee taste better than Starbucks sometimes?</span>
+                    <i class="fa-solid fa-chevron-down text-mcd-red transition-transform"></i>
+                </button>
+                <div class="hidden p-4 bg-gray-50 text-gray-700">Because they use 100% Arabica beans and brew fresh constantly — and it’s half the price.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outro Section -->
+    <section class="py-12 px-4 max-w-4xl mx-auto text-center border-t border-gray-200">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Look, I’ve spent way too much money testing every single drink on the McDonald’s drinks menu so you don’t have to guess. Whether you’re a black-coffee purist or a full-on caramel-frappe addict like me, there’s something here that’ll make your day better — and it won’t empty your wallet.
+        </p>
+        <p class="font-display text-2xl font-bold text-mcd-red">
+            Next time you pull up to that speaker, order like a pro. You’ve got this. ☕
+        </p>
+    </section>
+
+    <!-- About The Writer Section (NEW) -->
+    <section class="bg-mcd-dark text-white py-16 px-4">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div class="w-32 h-32 bg-gray-300 rounded-full flex-shrink-0 border-4 border-mcd-yellow overflow-hidden">
+                <!-- Placeholder Avatar -->
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Oliver&gender=male" alt="Oliver Banks" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="font-display text-2xl font-bold text-mcd-yellow mb-2">About the Writer: Oliver Banks</h3>
+                <p class="text-gray-300 leading-relaxed">
+                    Oliver Banks is a London-born food writer currently eating his way through the USA. With a passion for uncovering the best budget bites and a serious caffeine addiction, he’s always hunting for the perfect blend of flavor and value. Whether he’s reviewing high-end street food in NYC or ranking fast-food breakfasts in the Midwest, Oliver keeps it honest, hungry, and caffeinated.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-mcd-red text-white py-8 text-center text-sm font-medium">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="mb-2">&copy; 2025-2026 McCafé Guide by Oliver Banks.</p>
+            <p class="opacity-75 text-xs">This website is a fan guide and is not affiliated with McDonald's Corporation.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Toggle Mobile Menu
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Toggle Logic
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>
